@@ -1,4 +1,4 @@
-package com.pluralsight.controller;
+package com.controller;
 
 import javax.validation.Valid;
 
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
-import com.pluralsight.model.Goal;
+import com.model.Goal;
 
 @Controller
 @SessionAttributes("goal")

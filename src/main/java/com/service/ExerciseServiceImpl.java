@@ -1,11 +1,11 @@
-package com.pluralsight.service;
+package com.service;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.pluralsight.model.Activity;
+import com.model.Activity;
 
 
 @Service("exerciseService")
