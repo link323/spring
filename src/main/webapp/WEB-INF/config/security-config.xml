@@ -11,13 +11,16 @@
 
 
 	<http auto-config="true" use-expressions="true">
+	
+		<!-- zamiast statycznych dostepow uzyte expressions -->
 		<intercept-url pattern="/login.html" access="permitAll"/>
 		<intercept-url pattern="/loginFailed.html" access="permitAll"/>
 		<intercept-url pattern="/logout.html" access="permitAll"/>
 		<intercept-url pattern="/403.html" access="permitAll"/>
-		<intercept-url pattern="/**" access="hasRole(ROLE_USER)" />
+		<intercept-url pattern="/**" access="hasRole('ROLE_USER')" />
 		
-		<!-- <intercept-url pattern="/login.html" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+		<!-- statycznie zdefiniowane dostepy 
+		<intercept-url pattern="/login.html" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
 		<intercept-url pattern="/loginFailed.html" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
 		<intercept-url pattern="/logout.html" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
 		<intercept-url pattern="/403.html" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
